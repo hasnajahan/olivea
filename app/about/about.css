@@ -1,0 +1,420 @@
+/* ========================================
+   OLIVÉA — ABOUT PAGE
+   Luxury editorial | Olive & Beige
+======================================== */
+
+.about-page {
+    background-color: #f7f5ee;
+    color: #414b2b;
+}
+
+/* Shared section label */
+
+.about-section-label,
+.about-eyebrow {
+    color: #788263;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    line-height: 1.8;
+}
+
+/* ========================================
+   HERO SECTION
+======================================== */
+
+.about-hero {
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    align-items: center;
+    gap: 7%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 65px 8% 85px;
+}
+
+.about-hero-content {
+    padding: 20px 0;
+}
+
+.about-eyebrow {
+    margin: 0 0 24px;
+}
+
+.about-hero-content h1 {
+    margin: 0;
+    color: #3e482e;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(48px, 6vw, 78px);
+    font-weight: 400;
+    letter-spacing: -2px;
+    line-height: 1.08;
+}
+
+.about-hero-content h1 span {
+    color: #7c8762;
+    font-style: italic;
+}
+
+.about-hero-description {
+    max-width: 390px;
+    margin: 24px 0 30px;
+    color: #77786b;
+    font-size: 13px;
+    line-height: 2;
+}
+
+.about-discover-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 17px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #9ba087;
+    color: #414b2b;
+    font-size: 10px;
+    letter-spacing: 1.6px;
+    text-decoration: none;
+    transition: color 0.25s ease, border-color 0.25s ease;
+}
+
+.about-discover-link span {
+    font-size: 16px;
+    transition: transform 0.25s ease;
+}
+
+.about-discover-link:hover {
+    border-color: #78865a;
+    color: #78865a;
+}
+
+.about-discover-link:hover span {
+    transform: translateY(3px);
+}
+
+/* Hero image */
+
+.about-hero-image {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    background-color: #e8e2d3;
+}
+
+.about-hero-image img {
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+.about-hero-image:hover img {
+    transform: scale(1.025);
+}
+
+.about-image-caption {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 16px 18px;
+    background: rgba(247, 245, 238, 0.92);
+    color: #414b2b;
+}
+
+.about-image-caption span:first-child {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.about-image-caption span:last-child {
+    font-size: 8px;
+    letter-spacing: 1.5px;
+}
+
+/* ========================================
+   INTRODUCTION
+======================================== */
+
+.about-intro {
+    padding: 95px 24px 100px;
+    background-color: #eeece1;
+    text-align: center;
+}
+
+.about-intro .about-section-label {
+    margin: 0 0 22px;
+}
+
+.about-intro h2 {
+    margin: 0;
+    color: #414b2b;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(32px, 4.3vw, 51px);
+    font-weight: 400;
+    letter-spacing: -0.8px;
+    line-height: 1.35;
+}
+
+.about-intro h2 em {
+    color: #7c8762;
+    font-weight: 400;
+}
+
+.about-intro-description {
+    max-width: 620px;
+    margin: 25px auto 0;
+    color: #747567;
+    font-size: 13px;
+    line-height: 2.1;
+}
+
+/* ========================================
+   BRAND VALUES
+======================================== */
+
+.about-values {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 95px 6% 105px;
+}
+
+.about-values-heading {
+    margin-bottom: 42px;
+    text-align: center;
+}
+
+.about-values-heading .about-section-label {
+    margin: 0 0 13px;
+}
+
+.about-values-heading h2 {
+    margin: 0;
+    color: #414b2b;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(34px, 4vw, 45px);
+    font-weight: 400;
+}
+
+.about-values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    border-top: 1px solid #deded0;
+    border-bottom: 1px solid #deded0;
+}
+
+.about-value-card {
+    padding: 32px 27px 35px;
+}
+
+.about-value-card + .about-value-card {
+    border-left: 1px solid #deded0;
+}
+
+.about-value-number {
+    display: inline-block;
+    margin-bottom: 25px;
+    color: #858a70;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 15px;
+}
+
+.about-value-card h3 {
+    margin: 0 0 13px;
+    color: #414b2b;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.about-value-card p {
+    max-width: 280px;
+    margin: 0;
+    color: #77786b;
+    font-size: 12px;
+    line-height: 2;
+}
+
+/* ========================================
+   CLOSING CALL TO ACTION
+======================================== */
+
+.about-closing {
+    padding: 80px 24px 90px;
+    background-color: #e8e8d9;
+    text-align: center;
+}
+
+.about-closing .about-section-label {
+    margin: 0 0 18px;
+}
+
+.about-closing h2 {
+    margin: 0;
+    color: #414b2b;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(40px, 5vw, 59px);
+    font-weight: 400;
+    letter-spacing: -1px;
+    line-height: 1.2;
+}
+
+.about-closing h2 em {
+    color: #7c8762;
+    font-weight: 400;
+}
+
+.about-closing > p:not(.about-section-label) {
+    margin: 19px 0 27px;
+    color: #747567;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.about-shop-button {
+    display: inline-block;
+    padding: 15px 25px;
+    border: 1px solid #536440;
+    background-color: #536440;
+    color: #fffdf6;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.about-shop-button:hover {
+    background-color: transparent;
+    color: #414b2b;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+======================================== */
+
+@media (max-width: 900px) {
+    .about-hero {
+        grid-template-columns: 1fr 0.85fr;
+        gap: 5%;
+        padding: 55px 6% 70px;
+    }
+
+    .about-hero-content h1 {
+        font-size: clamp(44px, 6vw, 60px);
+    }
+
+    .about-values {
+        padding: 75px 5%;
+    }
+
+    .about-value-card {
+        padding: 28px 18px;
+    }
+
+    .about-value-card h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 650px) {
+    .about-hero {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 48px 6% 55px;
+    }
+
+    .about-hero-content {
+        padding: 0;
+    }
+
+    .about-eyebrow {
+        margin-bottom: 18px;
+        font-size: 9px;
+        letter-spacing: 2.5px;
+    }
+
+    .about-hero-content h1 {
+        font-size: clamp(48px, 11vw, 65px);
+        letter-spacing: -1.5px;
+    }
+
+    .about-hero-description {
+        max-width: 360px;
+        margin: 19px 0 24px;
+        font-size: 12px;
+    }
+
+    .about-hero-image {
+        max-width: 500px;
+        margin: 0 auto;
+        aspect-ratio: 4 / 4.5;
+    }
+
+    .about-intro {
+        padding: 70px 22px;
+    }
+
+    .about-intro h2 {
+        font-size: clamp(29px, 7vw, 40px);
+    }
+
+    .about-intro-description {
+        font-size: 12px;
+        line-height: 2;
+    }
+
+    .about-values {
+        padding: 70px 7%;
+    }
+
+    .about-values-heading {
+        margin-bottom: 30px;
+    }
+
+    .about-values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-value-card {
+        padding: 25px 5px 28px;
+    }
+
+    .about-value-card + .about-value-card {
+        border-top: 1px solid #deded0;
+        border-left: none;
+    }
+
+    .about-value-number {
+        margin-bottom: 13px;
+    }
+
+    .about-value-card h3 {
+        font-size: 22px;
+    }
+
+    .about-value-card p {
+        max-width: 350px;
+    }
+
+    .about-closing {
+        padding: 65px 20px 75px;
+    }
+
+    .about-closing h2 {
+        font-size: clamp(38px, 9vw, 49px);
+    }
+}
+
+/* Reduced motion accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+    .about-hero-image img,
+    .about-discover-link,
+    .about-discover-link span,
+    .about-shop-button {
+        transition: none;
+    }
+}
