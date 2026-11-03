@@ -1,19 +1,10 @@
+import data from "../data/products";
 
 class ProductServices {
     static async getProducts() {
         "use cache";
 
-        const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
-
-        const response = await fetch(`${baseUrl}/api/products`);
-
-        if (!response.ok) {
-            throw new Error("Failed to fetch products");
-        }
-
-        const result = await response.json();
-
-        return result.data;
+        return data;
     }
 
     static async getProductById(id) {
